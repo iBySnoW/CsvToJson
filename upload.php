@@ -10,8 +10,6 @@ $fileName = explode(".", basename( $_FILES["fileToUpload"]["name"]))[0];
 $fileExtension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $typeSelected = $_SESSION['converterType'];
 
-var_dump($typeSelected);
-
 // CHECK THE FILE EXTENSION
 
 $checkResult = Convert::checkFileExtension($typeSelected, $fileExtension);
